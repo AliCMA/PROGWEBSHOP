@@ -1,3 +1,6 @@
+<!--  Ali zijn code -->
+
+
 <?php 
    session_start();
    include "db_conn.php";
@@ -7,17 +10,16 @@
 <html>
 <head>
 	<title>HOME</title>
-	<link rel="stylesheet" href="indexphp.css">
+	<link rel="stylesheet" href="Logingebruikers.css">
 </head>
 <body>
-      <div class="container d-flex justify-content-center align-items-center"
-      style="min-height: 100vh">
+      <div class="d-flex justify-content-center align-items-center">
       	<?php if ($_SESSION['role'] == 'admin') {?>
       	
       		<div class="card" style="width: 18rem;">
-			  <img src="img/admin-default.png" 
+			  <img src="img/adminlogo.png" 
 			       class="card-img-top" 
-			       alt="admin image">
+			       alt="Foto van de admin ">
 			  <div class="card-body text-center">
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>
@@ -59,9 +61,9 @@
       	<?php }else { ?>
       	
       		<div class="card" style="width: 18rem;">
-			  <img src="img/user-default.png" 
+			  <img src="img/standaardlogo.png" 
 			       class="card-img-top" 
-			       alt="admin image">
+			       alt="Foto van de onder admin of lager">
 			  <div class="card-body text-center">
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>

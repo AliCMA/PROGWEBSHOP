@@ -1,3 +1,5 @@
+<!--  Ali zijn code -->
+
 <?php  
 
 $sname = "localhost";

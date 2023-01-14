@@ -1,3 +1,5 @@
+<!--  Ali zijn code -->
+
 <?php  
 session_start();
 include "../db_conn.php";
@@ -27,7 +29,9 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role
 	}else {
 
 		$password = md5($password);
-        
+
+
+        //De select query van mijn database
         $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 		// echo $username, $password;
 
@@ -52,11 +56,11 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role
         		header("Location: ../home.php");
 
         	}else {
-        		header("Location: ../index.php?error=Incorect User name or password");
+        		header("Location: ../index.php?error=Foute gebruikersnaam, wachtwoord of type!");
         	}
         }
 		else {
-        	header("Location: ../index.php?error=Incorect User name or password");
+        	header("Location: ../index.php?error=Foute gebruikersnaam, wachtwoord of type!");
         }
 
 	}

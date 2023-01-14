@@ -1,3 +1,6 @@
+<!--  Ali zijn code -->
+
+
 
 <?php 	
    session_start();
@@ -6,7 +9,7 @@
 <html>
 <head>
 	<title>PROG INLOG SCHERM</title>
-	<link rel="stylesheet" href="indexphp.css">
+	<link rel="stylesheet" href="Logingebruikers.css">
 </head>
 <body>
       <div class="container d-flex justify-content-center align-items-center"
