@@ -16,7 +16,7 @@
       <div class="d-flex justify-content-center align-items-center">
       	<?php if ($_SESSION['role'] == 'admin') {?>
       	
-      		<div class="card" style="width: 18rem;">
+      		<div class="card">
 			  <img src="img/adminlogo.png" 
 			       class="card-img-top" 
 			       alt="Foto van de admin ">
@@ -33,8 +33,7 @@
                  if (mysqli_num_rows($res) > 0) {?>
                   
 				<h1 class="display-4 fs-1">Members</h1>
-				<table class="table" 
-				       style="width: 32rem;">
+				<table class= "table">
 				  <thead>
 				    <tr>
 				      <th scope="col">#</th>
@@ -77,6 +76,7 @@
 </html>
 <?php }else{
 	header("Location: index.php");
+	exit();
 } ?>
 
 	

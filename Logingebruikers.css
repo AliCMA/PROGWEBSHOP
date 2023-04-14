@@ -30,7 +30,9 @@ svg {
     vertical-align: middle;
 }
 
-table {
+
+
+table{
     caption-side: bottom;
     border-collapse: collapse;
 }
@@ -67,6 +69,7 @@ label {
     margin-bottom: 1rem;
     color: #212529;
     vertical-align: top;
+    width: 32rem;
     border-color: #dee2e6;
 }
 
@@ -179,7 +182,8 @@ fieldset:disabled .btn {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem;
+    border-radius: 0.25rem;
+    width: 18rem;
 }
 
 .card-body {
@@ -189,19 +193,22 @@ fieldset:disabled .btn {
 
 .d-flex {
     display: flex !important;
+    min-height: 100vh;  
 }
 
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    width: 450px;
 }
 
 .justify-content-center {
     justify-content: center !important;
-    min-height: 100vh;
+    min-height: 100vh;  
 }
 
 .align-items-center {
     align-items: center !important;
+    min-height: 100vh;  
 }
 
 .mb-3 {

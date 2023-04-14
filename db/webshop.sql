@@ -24,8 +24,6 @@ VALUES
 (NULL, 'updater', 'said97', '81dc9bdb52d04dc20036dbd8313ed055', 'said'); 
 
 
-
-
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 

@@ -1,5 +1,4 @@
-<!--  Ali zijn code -->
-
+<!--  Yusuf zijn code -->
 <?php  
 
 $sname = "localhost";
